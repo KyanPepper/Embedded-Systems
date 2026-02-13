@@ -1,0 +1,95 @@
+/**
+ * Combined demo: Blink LED, Bump sensors display, Encoder display, and Motor control.
+ * - LED blinks continuously
+ * - Bump LEFT to START driving forward
+ * - Bump RIGHT to STOP
+ * - Encoder values shown on display
+ * @author Kyan Kotschevar-Smead
+ */
+target C {
+  platform: {
+    name: "rp2040",
+    board: "pololu_3pi_2040_robot"
+  },
+  single-threaded: true
+}
+
+// Import library reactors
+import Display from "lib/Display.lf"
+import Bump from "lib/Bump.lf"
+import Encoders from "lib/Encoders.lf"
+import Motors from "lib/Motors.lf"
+
+preamble {=
+  #include <stdio.h>
+  #include <pico/stdlib.h>
+  #include <hardware/gpio.h>
+=}
+
+main reactor {
+  // Instantiate shared components
+  display = new Display()
+  bump = new Bump()
+  encoders = new Encoders()
+  motors = new Motors()
+  
+  // Timers for different functionalities
+  timer blink_timer(0, 500 ms)      // Blink LED every 500ms
+  timer encoder_timer(0, 500 ms)    // Read encoders every 500ms
+  
+  // State variables
+  state led_on: bool = false
+  state driving: bool = false
+  
+  logical action clear_bump
+  
+  // ========== LED Blink Functionality ==========
+  reaction(startup) -> display.line0 {=
+    gpio_init(PICO_DEFAULT_LED_PIN);
+    gpio_set_dir(PICO_DEFAULT_LED_PIN, GPIO_OUT);
+    lf_set(display.line0, "L=GO  R=STOP");
+  =}
+  
+  reaction(blink_timer) {=
+    self->led_on = !self->led_on;
+    gpio_put(PICO_DEFAULT_LED_PIN, self->led_on);
+  =}
+  
+  // ========== Bump Sensor + Motor Control ==========
+  // LEFT bump = START driving
+  reaction(bump.left) -> motors.left_power, motors.right_power, display.line1 {=
+    if (!self->driving) {
+      self->driving = true;
+      lf_set(motors.left_power, 0.3f);   // 30% power forward
+      lf_set(motors.right_power, 0.3f);
+      lf_set(display.line1, "DRIVING!");
+    }
+  =}
+  
+  // RIGHT bump = STOP
+  reaction(bump.right) -> motors.left_power, motors.right_power, display.line1 {=
+    if (self->driving) {
+      self->driving = false;
+      lf_set(motors.left_power, 0.0f);   // Stop
+      lf_set(motors.right_power, 0.0f);
+      lf_set(display.line1, "STOPPED");
+    }
+  =}
+  
+  // ========== Encoder Display Functionality ==========
+  reaction(encoder_timer) -> encoders.trigger {=
+    lf_set(encoders.trigger, true);
+  =}
+  
+  reaction(encoders.left) -> display.line2 {=
+    static char buf[17];
+    snprintf(buf, 17, "L Enc: %d", encoders.left->value);
+    lf_set(display.line2, buf);
+  =}
+  
+  reaction(encoders.right) -> display.line3 {=
+    static char buf[17];
+    snprintf(buf, 17, "R Enc: %d", encoders.right->value);
+    lf_set(display.line3, buf);
+  =}
+}
