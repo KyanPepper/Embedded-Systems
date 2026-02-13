@@ -9,6 +9,32 @@ It also includes some code from the [pololu-3pi-2040-robot library](https://gith
 
 See the [getting started instructions](https://www.lf-lang.org/embedded-lab/GettingStarted.html) to get started.
 
+---
+
+## Build & Upload
+
+**From repo root, compile any `.lf` file:**
+```bash
+export PICO_SDK_PATH="$PWD/pico-sdk" && /tmp/lf-cli-0.11.0-MacOS-aarch64/bin/lfc <file.lf>
+```
+
+or less verbose lfc 
+
+**Upload (put robot in BOOTSEL first: hold B, press RESET, release B):**
+```bash
+picotool load -x <path/to/Program.uf2>
+```
+lfc lab1/src/ToolsLEDSolution.lf
+picotool load -x lab1/src-gen/ToolsLEDSolution/build/ToolsLEDSolution.uf2
+
+**Example:**
+```bash
+export PICO_SDK_PATH="$PWD/pico-sdk" && /tmp/lf-cli-0.11.0-MacOS-aarch64/bin/lfc lab1/src/ToolsLEDSolution.lf
+picotool load -x lab1/src-gen/ToolsLEDSolution/build/ToolsLEDSolution.uf2
+```
+
+---
+
 ## Emulator
 To run basic tests and monitor GPIO, UART, and other supported peripherals, a [Node.js](https://nodejs.org/en)-based [emulator for the Raspberry Pi Pico](https://docs.wokwi.com/parts/wokwi-pi-pico) is provided in this repo. During the `nix` shell setup for the repo, the Node modules in the `test` directory are installed. This emulator is based on [Wokwi](https://wokwi.com).
 Because it emulates the Pico board, not the Pololu robot, it will not be able to run all the programs for the robot.

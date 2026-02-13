@@ -2,7 +2,8 @@ target C {
     platform: {
         name: "rp2040",
         board: "pololu_3pi_2040_robot"
-    }
+    },
+    single-threaded: true
 }
 
 import LED from "LED.lf"
