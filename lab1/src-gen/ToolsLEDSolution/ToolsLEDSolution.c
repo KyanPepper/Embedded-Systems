@@ -115,9 +115,25 @@ void _lf_initialize_trigger_objects() {
         static bool _initial = false;
         toolsledsolution_main_self[0]->led_on = _initial;
     } // End scoping.
+    { // For scoping
+        static int _initial = 0;
+        toolsledsolution_main_self[0]->blink_count = _initial;
+    } // End scoping.
+    { // For scoping
+        static int _initial = 1;
+        toolsledsolution_main_self[0]->target_blinks = _initial;
+    } // End scoping.
+    { // For scoping
+        static bool _initial = false;
+        toolsledsolution_main_self[0]->in_pause = _initial;
+    } // End scoping.
+    { // For scoping
+        static int _initial = 0;
+        toolsledsolution_main_self[0]->pause_ticks = _initial;
+    } // End scoping.
     // Initiaizing timer ToolsLEDSolution.t.
-    toolsledsolution_main_self[0]->_lf__t.offset = 0;
-    toolsledsolution_main_self[0]->_lf__t.period = SEC(1);
+    toolsledsolution_main_self[0]->_lf__t.offset = SEC(1);
+    toolsledsolution_main_self[0]->_lf__t.period = MSEC(100);
     // Associate timer with the environment of its parent
     environments[toolsledsolution_main].timer_triggers[timer_triggers_count[toolsledsolution_main]++] = &toolsledsolution_main_self[0]->_lf__t;
     toolsledsolution_main_self[0]->_lf__t.mode = NULL;

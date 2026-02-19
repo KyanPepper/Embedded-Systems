@@ -20,6 +20,8 @@ events:
     names:
       - "uname"
     candidate_directories:
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -40,6 +42,8 @@ events:
       - "/nix/var/nix/profiles/default/bin/"
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/uname"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/uname"
       - "/opt/homebrew/opt/node@22/bin/uname"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/uname"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/uname"
@@ -50,6 +54,8 @@ events:
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -68,6 +74,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -98,6 +106,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -116,6 +126,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -144,6 +156,8 @@ events:
     names:
       - "arm-none-eabi-gcc"
     candidate_directories:
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -164,12 +178,16 @@ events:
       - "/nix/var/nix/profiles/default/bin/"
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/arm-none-eabi-gcc"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/arm-none-eabi-gcc"
       - "/opt/homebrew/opt/node@22/bin/arm-none-eabi-gcc"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc"
     found: "/opt/homebrew/bin/arm-none-eabi-gcc"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -188,6 +206,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -218,6 +238,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -236,6 +258,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -264,6 +288,8 @@ events:
     names:
       - "arm-none-eabi-g++"
     candidate_directories:
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -284,12 +310,16 @@ events:
       - "/nix/var/nix/profiles/default/bin/"
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/arm-none-eabi-g++"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/arm-none-eabi-g++"
       - "/opt/homebrew/opt/node@22/bin/arm-none-eabi-g++"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-g++"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-g++"
     found: "/opt/homebrew/bin/arm-none-eabi-g++"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -308,6 +338,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -338,6 +370,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -356,6 +390,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -384,6 +420,8 @@ events:
     names:
       - "arm-none-eabi-objcopy"
     candidate_directories:
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -404,12 +442,16 @@ events:
       - "/nix/var/nix/profiles/default/bin/"
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/arm-none-eabi-objcopy"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/arm-none-eabi-objcopy"
       - "/opt/homebrew/opt/node@22/bin/arm-none-eabi-objcopy"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-objcopy"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-objcopy"
     found: "/opt/homebrew/bin/arm-none-eabi-objcopy"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -428,6 +470,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -458,6 +502,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -476,6 +522,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -504,6 +552,8 @@ events:
     names:
       - "arm-none-eabi-objdump"
     candidate_directories:
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -524,12 +574,16 @@ events:
       - "/nix/var/nix/profiles/default/bin/"
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/arm-none-eabi-objdump"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/arm-none-eabi-objdump"
       - "/opt/homebrew/opt/node@22/bin/arm-none-eabi-objdump"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-objdump"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-objdump"
     found: "/opt/homebrew/bin/arm-none-eabi-objdump"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -548,6 +602,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -582,6 +638,8 @@ events:
       - "make"
       - "smake"
     candidate_directories:
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -602,6 +660,8 @@ events:
       - "/nix/var/nix/profiles/default/bin/"
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/gmake"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/gmake"
       - "/opt/homebrew/opt/node@22/bin/gmake"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/gmake"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/gmake"
@@ -621,6 +681,8 @@ events:
       - "/Users/kyankotschevar-smead/.nix-profile/bin/gmake"
       - "/nix/var/nix/profiles/default/bin/gmake"
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/gmake"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/make"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/make"
       - "/opt/homebrew/opt/node@22/bin/make"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/make"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/make"
@@ -631,6 +693,8 @@ events:
     found: "/usr/bin/make"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -649,6 +713,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -683,6 +749,8 @@ events:
     found: "/opt/homebrew/share/cmake/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -701,6 +769,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -777,6 +847,8 @@ events:
     found: "/opt/homebrew/share/cmake/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -795,6 +867,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -845,6 +919,8 @@ events:
       - "ar"
     candidate_directories:
       - "/opt/homebrew/bin/"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -866,6 +942,8 @@ events:
     found: "/opt/homebrew/bin/arm-none-eabi-ar"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -884,6 +962,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -912,6 +992,8 @@ events:
       - "ranlib"
     candidate_directories:
       - "/opt/homebrew/bin/"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -933,6 +1015,8 @@ events:
     found: "/opt/homebrew/bin/arm-none-eabi-ranlib"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -951,6 +1035,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -979,6 +1065,8 @@ events:
       - "strip"
     candidate_directories:
       - "/opt/homebrew/bin/"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -1000,6 +1088,8 @@ events:
     found: "/opt/homebrew/bin/arm-none-eabi-strip"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -1018,6 +1108,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -1046,6 +1138,8 @@ events:
       - "ld"
     candidate_directories:
       - "/opt/homebrew/bin/"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -1067,6 +1161,8 @@ events:
     found: "/opt/homebrew/bin/arm-none-eabi-ld"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -1085,6 +1181,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -1113,6 +1211,8 @@ events:
       - "nm"
     candidate_directories:
       - "/opt/homebrew/bin/"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -1134,6 +1234,8 @@ events:
     found: "/opt/homebrew/bin/arm-none-eabi-nm"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -1152,6 +1254,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -1180,6 +1284,8 @@ events:
       - "readelf"
     candidate_directories:
       - "/opt/homebrew/bin/"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -1201,6 +1307,8 @@ events:
     found: "/opt/homebrew/bin/arm-none-eabi-readelf"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -1219,6 +1327,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -1247,6 +1357,8 @@ events:
       - "dlltool"
     candidate_directories:
       - "/opt/homebrew/bin/"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -1267,6 +1379,8 @@ events:
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/opt/homebrew/bin/arm-none-eabi-dlltool"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/arm-none-eabi-dlltool"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/arm-none-eabi-dlltool"
       - "/opt/homebrew/opt/node@22/bin/arm-none-eabi-dlltool"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-dlltool"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-dlltool"
@@ -1286,6 +1400,8 @@ events:
       - "/nix/var/nix/profiles/default/bin/arm-none-eabi-dlltool"
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-dlltool"
       - "/opt/homebrew/bin/dlltool"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/dlltool"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/dlltool"
       - "/opt/homebrew/opt/node@22/bin/dlltool"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/dlltool"
@@ -1307,6 +1423,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -1325,6 +1443,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -1353,6 +1473,8 @@ events:
       - "addr2line"
     candidate_directories:
       - "/opt/homebrew/bin/"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -1374,6 +1496,8 @@ events:
     found: "/opt/homebrew/bin/arm-none-eabi-addr2line"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -1392,6 +1516,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -1420,6 +1546,8 @@ events:
       - "tapi"
     candidate_directories:
       - "/opt/homebrew/bin/"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -1440,6 +1568,8 @@ events:
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/opt/homebrew/bin/arm-none-eabi-tapi"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/arm-none-eabi-tapi"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/arm-none-eabi-tapi"
       - "/opt/homebrew/opt/node@22/bin/arm-none-eabi-tapi"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-tapi"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-tapi"
@@ -1459,6 +1589,8 @@ events:
       - "/nix/var/nix/profiles/default/bin/arm-none-eabi-tapi"
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-tapi"
       - "/opt/homebrew/bin/tapi"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/tapi"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/tapi"
       - "/opt/homebrew/opt/node@22/bin/tapi"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi"
@@ -1480,6 +1612,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -1498,6 +1632,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -1528,6 +1664,8 @@ events:
       - "arm-none-eabi-gcc-ar"
     candidate_directories:
       - "/opt/homebrew/bin/"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -1548,6 +1686,8 @@ events:
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/arm-none-eabi-gcc-ar-15.2"
       - "/opt/homebrew/opt/node@22/bin/arm-none-eabi-gcc-ar-15.2"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar-15.2"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ar-15.2"
@@ -1567,6 +1707,8 @@ events:
       - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ar-15.2"
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-15.2"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ar-15"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/arm-none-eabi-gcc-ar-15"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/arm-none-eabi-gcc-ar-15"
       - "/opt/homebrew/opt/node@22/bin/arm-none-eabi-gcc-ar-15"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar-15"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ar-15"
@@ -1586,6 +1728,8 @@ events:
       - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ar-15"
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-15"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ar15"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/arm-none-eabi-gcc-ar15"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/arm-none-eabi-gcc-ar15"
       - "/opt/homebrew/opt/node@22/bin/arm-none-eabi-gcc-ar15"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar15"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ar15"
@@ -1607,6 +1751,8 @@ events:
     found: "/opt/homebrew/bin/arm-none-eabi-gcc-ar"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -1625,6 +1771,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -1655,6 +1803,8 @@ events:
       - "arm-none-eabi-gcc-ranlib"
     candidate_directories:
       - "/opt/homebrew/bin/"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -1675,6 +1825,8 @@ events:
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/arm-none-eabi-gcc-ranlib-15.2"
       - "/opt/homebrew/opt/node@22/bin/arm-none-eabi-gcc-ranlib-15.2"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib-15.2"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ranlib-15.2"
@@ -1694,6 +1846,8 @@ events:
       - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ranlib-15.2"
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-15.2"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/arm-none-eabi-gcc-ranlib-15"
       - "/opt/homebrew/opt/node@22/bin/arm-none-eabi-gcc-ranlib-15"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib-15"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ranlib-15"
@@ -1713,6 +1867,8 @@ events:
       - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ranlib-15"
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-15"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib15"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/arm-none-eabi-gcc-ranlib15"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/arm-none-eabi-gcc-ranlib15"
       - "/opt/homebrew/opt/node@22/bin/arm-none-eabi-gcc-ranlib15"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib15"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ranlib15"
@@ -1734,6 +1890,8 @@ events:
     found: "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -1752,6 +1910,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -1786,6 +1946,8 @@ events:
     found: "/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -1804,6 +1966,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -1880,6 +2044,8 @@ events:
     found: "/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -1898,6 +2064,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -1950,6 +2118,8 @@ events:
       - "arm-none-eabi-gcc-ar"
     candidate_directories:
       - "/opt/homebrew/bin/"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -1970,6 +2140,8 @@ events:
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/arm-none-eabi-gcc-ar-15.2"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/arm-none-eabi-gcc-ar-15.2"
       - "/opt/homebrew/opt/node@22/bin/arm-none-eabi-gcc-ar-15.2"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar-15.2"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ar-15.2"
@@ -1989,6 +2161,8 @@ events:
       - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ar-15.2"
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-15.2"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ar-15"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/arm-none-eabi-gcc-ar-15"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/arm-none-eabi-gcc-ar-15"
       - "/opt/homebrew/opt/node@22/bin/arm-none-eabi-gcc-ar-15"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar-15"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ar-15"
@@ -2008,6 +2182,8 @@ events:
       - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ar-15"
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-15"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ar15"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/arm-none-eabi-gcc-ar15"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/arm-none-eabi-gcc-ar15"
       - "/opt/homebrew/opt/node@22/bin/arm-none-eabi-gcc-ar15"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar15"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ar15"
@@ -2029,6 +2205,8 @@ events:
     found: "/opt/homebrew/bin/arm-none-eabi-gcc-ar"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -2047,6 +2225,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -2077,6 +2257,8 @@ events:
       - "arm-none-eabi-gcc-ranlib"
     candidate_directories:
       - "/opt/homebrew/bin/"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -2097,6 +2279,8 @@ events:
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/arm-none-eabi-gcc-ranlib-15.2"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/arm-none-eabi-gcc-ranlib-15.2"
       - "/opt/homebrew/opt/node@22/bin/arm-none-eabi-gcc-ranlib-15.2"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib-15.2"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ranlib-15.2"
@@ -2116,6 +2300,8 @@ events:
       - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ranlib-15.2"
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-15.2"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/arm-none-eabi-gcc-ranlib-15"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/arm-none-eabi-gcc-ranlib-15"
       - "/opt/homebrew/opt/node@22/bin/arm-none-eabi-gcc-ranlib-15"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib-15"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ranlib-15"
@@ -2135,6 +2321,8 @@ events:
       - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ranlib-15"
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-15"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib15"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/arm-none-eabi-gcc-ranlib15"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/arm-none-eabi-gcc-ranlib15"
       - "/opt/homebrew/opt/node@22/bin/arm-none-eabi-gcc-ranlib15"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib15"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ranlib15"
@@ -2156,6 +2344,8 @@ events:
     found: "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -2174,6 +2364,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -2217,6 +2409,8 @@ events:
       - "arm-none-eabi-gcc-ar"
     candidate_directories:
       - "/opt/homebrew/bin/"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -2237,6 +2431,8 @@ events:
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ar-"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/arm-none-eabi-gcc-ar-"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/arm-none-eabi-gcc-ar-"
       - "/opt/homebrew/opt/node@22/bin/arm-none-eabi-gcc-ar-"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar-"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ar-"
@@ -2256,6 +2452,8 @@ events:
       - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ar-"
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ar-"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/arm-none-eabi-gcc-ar-"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/arm-none-eabi-gcc-ar-"
       - "/opt/homebrew/opt/node@22/bin/arm-none-eabi-gcc-ar-"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar-"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ar-"
@@ -2277,6 +2475,8 @@ events:
     found: "/opt/homebrew/bin/arm-none-eabi-gcc-ar"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -2295,6 +2495,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -2325,6 +2527,8 @@ events:
       - "arm-none-eabi-gcc-ranlib"
     candidate_directories:
       - "/opt/homebrew/bin/"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -2345,6 +2549,8 @@ events:
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib-"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/arm-none-eabi-gcc-ranlib-"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/arm-none-eabi-gcc-ranlib-"
       - "/opt/homebrew/opt/node@22/bin/arm-none-eabi-gcc-ranlib-"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib-"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ranlib-"
@@ -2364,6 +2570,8 @@ events:
       - "/nix/var/nix/profiles/default/bin/arm-none-eabi-gcc-ranlib-"
       - "/Users/kyankotschevar-smead/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib-"
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/arm-none-eabi-gcc-ranlib-"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/arm-none-eabi-gcc-ranlib-"
       - "/opt/homebrew/opt/node@22/bin/arm-none-eabi-gcc-ranlib-"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib-"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ranlib-"
@@ -2385,6 +2593,8 @@ events:
     found: "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -2403,6 +2613,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -2418,8 +2630,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/Users/kyankotschevar-smead/Desktop/Projects/Embedded-Systems/lab1/src-gen/ToolsLEDSolution/build/CMakeFiles/CMakeScratch/TryCompile-zy3XZc"
-      binary: "/Users/kyankotschevar-smead/Desktop/Projects/Embedded-Systems/lab1/src-gen/ToolsLEDSolution/build/CMakeFiles/CMakeScratch/TryCompile-zy3XZc"
+      source: "/Users/kyankotschevar-smead/Desktop/Projects/Embedded-Systems/lab1/src-gen/ToolsLEDSolution/build/CMakeFiles/CMakeScratch/TryCompile-6Eigfe"
+      binary: "/Users/kyankotschevar-smead/Desktop/Projects/Embedded-Systems/lab1/src-gen/ToolsLEDSolution/build/CMakeFiles/CMakeScratch/TryCompile-6Eigfe"
     cmakeVariables:
       CMAKE_C_FLAGS: "-mcpu=cortex-m0plus -mthumb"
       CMAKE_C_FLAGS_DEBUG: "-Og -g"
@@ -2430,12 +2642,12 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/kyankotschevar-smead/Desktop/Projects/Embedded-Systems/lab1/src-gen/ToolsLEDSolution/build/CMakeFiles/CMakeScratch/TryCompile-zy3XZc'
+        Change Dir: '/Users/kyankotschevar-smead/Desktop/Projects/Embedded-Systems/lab1/src-gen/ToolsLEDSolution/build/CMakeFiles/CMakeScratch/TryCompile-6Eigfe'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a615f/fast
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a615f.dir/build.make CMakeFiles/cmTC_a615f.dir/build
-        Building C object CMakeFiles/cmTC_a615f.dir/CMakeCCompilerABI.c.o
-        /opt/homebrew/bin/arm-none-eabi-gcc   -mcpu=cortex-m0plus -mthumb    -v -o CMakeFiles/cmTC_a615f.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_94f74/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_94f74.dir/build.make CMakeFiles/cmTC_94f74.dir/build
+        Building C object CMakeFiles/cmTC_94f74.dir/CMakeCCompilerABI.c.o
+        /opt/homebrew/bin/arm-none-eabi-gcc   -mcpu=cortex-m0plus -mthumb    -v -o CMakeFiles/cmTC_94f74.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-gcc
         Target: arm-none-eabi
@@ -2443,8 +2655,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 15.2.1 20251203 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_a615f.dir/CMakeCCompilerABI.c.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_a615f.dir/'
-         /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/cc1 -quiet -v -imultilib thumb/v6-m/nofp -iprefix /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/ -isysroot /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_a615f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -version -o /var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//ccVGVLcQ.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_94f74.dir/CMakeCCompilerABI.c.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_94f74.dir/'
+         /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/cc1 -quiet -v -imultilib thumb/v6-m/nofp -iprefix /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/ -isysroot /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_94f74.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -version -o /var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//ccmwMpU0.s
         GNU C23 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) version 15.2.1 20251203 (arm-none-eabi)
         	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
         
@@ -2461,14 +2673,14 @@ events:
          /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include
         End of search list.
         Compiler executable checksum: 102968aafa3cff165d00ca07963f2f7f
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_a615f.dir/CMakeCCompilerABI.c.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_a615f.dir/'
-         /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/as -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_a615f.dir/CMakeCCompilerABI.c.o /var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//ccVGVLcQ.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_94f74.dir/CMakeCCompilerABI.c.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_94f74.dir/'
+         /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/as -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_94f74.dir/CMakeCCompilerABI.c.o /var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//ccmwMpU0.s
         GNU assembler version 2.45.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 2.45.1.20251203
         COMPILER_PATH=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_a615f.dir/CMakeCCompilerABI.c.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_a615f.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_a615f.elf
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a615f.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_94f74.dir/CMakeCCompilerABI.c.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_94f74.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_94f74.elf
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94f74.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-gcc
         COLLECT_LTO_WRAPPER=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/lto-wrapper
@@ -2479,11 +2691,11 @@ events:
         gcc version 15.2.1 20251203 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 
         COMPILER_PATH=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_a615f.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_a615f.elf.'
-         /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/collect2 -plugin /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/liblto_plugin.so -plugin-opt=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//cc7CpO24.res --sysroot=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi -X -o cmTC_a615f.elf -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1 -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_a615f.dir/CMakeCCompilerABI.c.o
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_94f74.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_94f74.elf.'
+         /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/collect2 -plugin /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/liblto_plugin.so -plugin-opt=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//ccyelOFM.res --sysroot=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi -X -o cmTC_94f74.elf -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1 -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_94f74.dir/CMakeCCompilerABI.c.o
         /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 00008000
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_a615f.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_a615f.elf.'
-        /opt/homebrew/bin/arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb  -Wl,--build-id=none -nostdlib  -v CMakeFiles/cmTC_a615f.dir/CMakeCCompilerABI.c.o -o cmTC_a615f.elf
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_94f74.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_94f74.elf.'
+        /opt/homebrew/bin/arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb  -Wl,--build-id=none -nostdlib  -v CMakeFiles/cmTC_94f74.dir/CMakeCCompilerABI.c.o -o cmTC_94f74.elf
         
       exitCode: 0
   -
@@ -2516,12 +2728,12 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/kyankotschevar-smead/Desktop/Projects/Embedded-Systems/lab1/src-gen/ToolsLEDSolution/build/CMakeFiles/CMakeScratch/TryCompile-zy3XZc']
+        ignore line: [Change Dir: '/Users/kyankotschevar-smead/Desktop/Projects/Embedded-Systems/lab1/src-gen/ToolsLEDSolution/build/CMakeFiles/CMakeScratch/TryCompile-6Eigfe']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a615f/fast]
-        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a615f.dir/build.make CMakeFiles/cmTC_a615f.dir/build]
-        ignore line: [Building C object CMakeFiles/cmTC_a615f.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/opt/homebrew/bin/arm-none-eabi-gcc   -mcpu=cortex-m0plus -mthumb    -v -o CMakeFiles/cmTC_a615f.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_94f74/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_94f74.dir/build.make CMakeFiles/cmTC_94f74.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_94f74.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/opt/homebrew/bin/arm-none-eabi-gcc   -mcpu=cortex-m0plus -mthumb    -v -o CMakeFiles/cmTC_94f74.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-gcc]
         ignore line: [Target: arm-none-eabi]
@@ -2529,8 +2741,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 15.2.1 20251203 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_a615f.dir/CMakeCCompilerABI.c.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_a615f.dir/']
-        ignore line: [ /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/cc1 -quiet -v -imultilib thumb/v6-m/nofp -iprefix /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/ -isysroot /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_a615f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -version -o /var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//ccVGVLcQ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_94f74.dir/CMakeCCompilerABI.c.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_94f74.dir/']
+        ignore line: [ /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/cc1 -quiet -v -imultilib thumb/v6-m/nofp -iprefix /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/ -isysroot /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_94f74.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -version -o /var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//ccmwMpU0.s]
         ignore line: [GNU C23 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) version 15.2.1 20251203 (arm-none-eabi)]
         ignore line: [	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
         ignore line: []
@@ -2547,14 +2759,14 @@ events:
         ignore line: [ /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 102968aafa3cff165d00ca07963f2f7f]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_a615f.dir/CMakeCCompilerABI.c.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_a615f.dir/']
-        ignore line: [ /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/as -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_a615f.dir/CMakeCCompilerABI.c.o /var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//ccVGVLcQ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_94f74.dir/CMakeCCompilerABI.c.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_94f74.dir/']
+        ignore line: [ /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/as -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_94f74.dir/CMakeCCompilerABI.c.o /var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//ccmwMpU0.s]
         ignore line: [GNU assembler version 2.45.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 2.45.1.20251203]
         ignore line: [COMPILER_PATH=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/]
         ignore line: [LIBRARY_PATH=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_a615f.dir/CMakeCCompilerABI.c.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_a615f.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_a615f.elf]
-        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a615f.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_94f74.dir/CMakeCCompilerABI.c.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_94f74.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_94f74.elf]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94f74.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-gcc]
         ignore line: [COLLECT_LTO_WRAPPER=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/lto-wrapper]
@@ -2565,17 +2777,17 @@ events:
         ignore line: [gcc version 15.2.1 20251203 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) ]
         ignore line: [COMPILER_PATH=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/]
         ignore line: [LIBRARY_PATH=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_a615f.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_a615f.elf.']
-        link line: [ /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/collect2 -plugin /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/liblto_plugin.so -plugin-opt=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//cc7CpO24.res --sysroot=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi -X -o cmTC_a615f.elf -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1 -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_a615f.dir/CMakeCCompilerABI.c.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_94f74.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_94f74.elf.']
+        link line: [ /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/collect2 -plugin /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/liblto_plugin.so -plugin-opt=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//ccyelOFM.res --sysroot=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi -X -o cmTC_94f74.elf -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1 -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_94f74.dir/CMakeCCompilerABI.c.o]
           arg [/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//cc7CpO24.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//ccyelOFM.res] ==> ignore
           arg [--sysroot=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi] ==> ignore
           arg [-X] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_a615f.elf] ==> ignore
+          arg [cmTC_94f74.elf] ==> ignore
           arg [-L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp] ==> dir [/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp]
           arg [-L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp] ==> dir [/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp]
           arg [-L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp] ==> dir [/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp]
@@ -2584,11 +2796,11 @@ events:
           arg [-L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib] ==> dir [/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib]
           arg [-L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib] ==> dir [/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib]
           arg [--build-id=none] ==> ignore
-          arg [CMakeFiles/cmTC_a615f.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_94f74.dir/CMakeCCompilerABI.c.o] ==> ignore
         ignore line: [/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start]
         ignore line: [ defaulting to 00008000]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_a615f.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_a615f.elf.']
-        ignore line: [/opt/homebrew/bin/arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb  -Wl --build-id=none -nostdlib  -v CMakeFiles/cmTC_a615f.dir/CMakeCCompilerABI.c.o -o cmTC_a615f.elf]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_94f74.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_94f74.elf.']
+        ignore line: [/opt/homebrew/bin/arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb  -Wl --build-id=none -nostdlib  -v CMakeFiles/cmTC_94f74.dir/CMakeCCompilerABI.c.o -o cmTC_94f74.elf]
         ignore line: []
         ignore line: []
         collapse library dir [/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp] ==> [/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp]
@@ -2613,8 +2825,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/kyankotschevar-smead/Desktop/Projects/Embedded-Systems/lab1/src-gen/ToolsLEDSolution/build/CMakeFiles/CMakeScratch/TryCompile-VQwrgi"
-      binary: "/Users/kyankotschevar-smead/Desktop/Projects/Embedded-Systems/lab1/src-gen/ToolsLEDSolution/build/CMakeFiles/CMakeScratch/TryCompile-VQwrgi"
+      source: "/Users/kyankotschevar-smead/Desktop/Projects/Embedded-Systems/lab1/src-gen/ToolsLEDSolution/build/CMakeFiles/CMakeScratch/TryCompile-uvM3A6"
+      binary: "/Users/kyankotschevar-smead/Desktop/Projects/Embedded-Systems/lab1/src-gen/ToolsLEDSolution/build/CMakeFiles/CMakeScratch/TryCompile-uvM3A6"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-mcpu=cortex-m0plus -mthumb"
       CMAKE_CXX_FLAGS_DEBUG: "-Og -g"
@@ -2626,12 +2838,12 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/kyankotschevar-smead/Desktop/Projects/Embedded-Systems/lab1/src-gen/ToolsLEDSolution/build/CMakeFiles/CMakeScratch/TryCompile-VQwrgi'
+        Change Dir: '/Users/kyankotschevar-smead/Desktop/Projects/Embedded-Systems/lab1/src-gen/ToolsLEDSolution/build/CMakeFiles/CMakeScratch/TryCompile-uvM3A6'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_05f79/fast
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_05f79.dir/build.make CMakeFiles/cmTC_05f79.dir/build
-        Building CXX object CMakeFiles/cmTC_05f79.dir/CMakeCXXCompilerABI.cpp.o
-        /opt/homebrew/bin/arm-none-eabi-g++   -mcpu=cortex-m0plus -mthumb    -v -o CMakeFiles/cmTC_05f79.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4a696/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_4a696.dir/build.make CMakeFiles/cmTC_4a696.dir/build
+        Building CXX object CMakeFiles/cmTC_4a696.dir/CMakeCXXCompilerABI.cpp.o
+        /opt/homebrew/bin/arm-none-eabi-g++   -mcpu=cortex-m0plus -mthumb    -v -o CMakeFiles/cmTC_4a696.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-g++
         Target: arm-none-eabi
@@ -2639,8 +2851,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 15.2.1 20251203 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_05f79.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_05f79.dir/'
-         /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/cc1plus -quiet -v -imultilib thumb/v6-m/nofp -iprefix /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/ -isysroot /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_05f79.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -version -o /var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//cc1aD6jv.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_4a696.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_4a696.dir/'
+         /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/cc1plus -quiet -v -imultilib thumb/v6-m/nofp -iprefix /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/ -isysroot /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_4a696.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -version -o /var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//ccbeNcDb.s
         GNU C++17 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) version 15.2.1 20251203 (arm-none-eabi)
         	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
         
@@ -2663,14 +2875,14 @@ events:
          /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include
         End of search list.
         Compiler executable checksum: 70dd2b75a43d778853878c77fa3ca703
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_05f79.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_05f79.dir/'
-         /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/as -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_05f79.dir/CMakeCXXCompilerABI.cpp.o /var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//cc1aD6jv.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_4a696.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_4a696.dir/'
+         /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/as -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_4a696.dir/CMakeCXXCompilerABI.cpp.o /var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//ccbeNcDb.s
         GNU assembler version 2.45.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 2.45.1.20251203
         COMPILER_PATH=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_05f79.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_05f79.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_05f79.elf
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05f79.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_4a696.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_4a696.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_4a696.elf
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a696.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-g++
         COLLECT_LTO_WRAPPER=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/lto-wrapper
@@ -2681,11 +2893,11 @@ events:
         gcc version 15.2.1 20251203 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 
         COMPILER_PATH=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_05f79.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_05f79.elf.'
-         /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/collect2 -plugin /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/liblto_plugin.so -plugin-opt=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//ccpGe6rr.res --sysroot=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi -X -o cmTC_05f79.elf -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1 -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_05f79.dir/CMakeCXXCompilerABI.cpp.o
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_4a696.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_4a696.elf.'
+         /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/collect2 -plugin /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/liblto_plugin.so -plugin-opt=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//ccKAsUCC.res --sysroot=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi -X -o cmTC_4a696.elf -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1 -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_4a696.dir/CMakeCXXCompilerABI.cpp.o
         /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 00008000
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_05f79.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_05f79.elf.'
-        /opt/homebrew/bin/arm-none-eabi-g++ -mcpu=cortex-m0plus -mthumb  -Wl,--build-id=none -nostdlib  -v CMakeFiles/cmTC_05f79.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_05f79.elf
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_4a696.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_4a696.elf.'
+        /opt/homebrew/bin/arm-none-eabi-g++ -mcpu=cortex-m0plus -mthumb  -Wl,--build-id=none -nostdlib  -v CMakeFiles/cmTC_4a696.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_4a696.elf
         
       exitCode: 0
   -
@@ -2724,12 +2936,12 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/kyankotschevar-smead/Desktop/Projects/Embedded-Systems/lab1/src-gen/ToolsLEDSolution/build/CMakeFiles/CMakeScratch/TryCompile-VQwrgi']
+        ignore line: [Change Dir: '/Users/kyankotschevar-smead/Desktop/Projects/Embedded-Systems/lab1/src-gen/ToolsLEDSolution/build/CMakeFiles/CMakeScratch/TryCompile-uvM3A6']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_05f79/fast]
-        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_05f79.dir/build.make CMakeFiles/cmTC_05f79.dir/build]
-        ignore line: [Building CXX object CMakeFiles/cmTC_05f79.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/opt/homebrew/bin/arm-none-eabi-g++   -mcpu=cortex-m0plus -mthumb    -v -o CMakeFiles/cmTC_05f79.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4a696/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_4a696.dir/build.make CMakeFiles/cmTC_4a696.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_4a696.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/opt/homebrew/bin/arm-none-eabi-g++   -mcpu=cortex-m0plus -mthumb    -v -o CMakeFiles/cmTC_4a696.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-g++]
         ignore line: [Target: arm-none-eabi]
@@ -2737,8 +2949,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 15.2.1 20251203 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_05f79.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_05f79.dir/']
-        ignore line: [ /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/cc1plus -quiet -v -imultilib thumb/v6-m/nofp -iprefix /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/ -isysroot /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_05f79.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -version -o /var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//cc1aD6jv.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_4a696.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_4a696.dir/']
+        ignore line: [ /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/cc1plus -quiet -v -imultilib thumb/v6-m/nofp -iprefix /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/ -isysroot /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_4a696.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -version -o /var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//ccbeNcDb.s]
         ignore line: [GNU C++17 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) version 15.2.1 20251203 (arm-none-eabi)]
         ignore line: [	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
         ignore line: []
@@ -2761,14 +2973,14 @@ events:
         ignore line: [ /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 70dd2b75a43d778853878c77fa3ca703]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_05f79.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_05f79.dir/']
-        ignore line: [ /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/as -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_05f79.dir/CMakeCXXCompilerABI.cpp.o /var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//cc1aD6jv.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_4a696.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_4a696.dir/']
+        ignore line: [ /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/as -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_4a696.dir/CMakeCXXCompilerABI.cpp.o /var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//ccbeNcDb.s]
         ignore line: [GNU assembler version 2.45.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 2.45.1.20251203]
         ignore line: [COMPILER_PATH=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/]
         ignore line: [LIBRARY_PATH=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_05f79.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_05f79.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_05f79.elf]
-        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05f79.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles/cmTC_4a696.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'CMakeFiles/cmTC_4a696.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_4a696.elf]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a696.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-g++]
         ignore line: [COLLECT_LTO_WRAPPER=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/lto-wrapper]
@@ -2779,17 +2991,17 @@ events:
         ignore line: [gcc version 15.2.1 20251203 (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) ]
         ignore line: [COMPILER_PATH=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/]
         ignore line: [LIBRARY_PATH=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/:/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_05f79.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_05f79.elf.']
-        link line: [ /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/collect2 -plugin /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/liblto_plugin.so -plugin-opt=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//ccpGe6rr.res --sysroot=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi -X -o cmTC_05f79.elf -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1 -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_05f79.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_4a696.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_4a696.elf.']
+        link line: [ /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/collect2 -plugin /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/liblto_plugin.so -plugin-opt=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//ccKAsUCC.res --sysroot=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi -X -o cmTC_4a696.elf -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1 -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib -L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_4a696.dir/CMakeCXXCompilerABI.cpp.o]
           arg [/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/15.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//ccpGe6rr.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/var/folders/jn/9bnqzx850d13jsb_dy3c_13r0000gn/T//ccKAsUCC.res] ==> ignore
           arg [--sysroot=/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi] ==> ignore
           arg [-X] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_05f79.elf] ==> ignore
+          arg [cmTC_4a696.elf] ==> ignore
           arg [-L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp] ==> dir [/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp]
           arg [-L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp] ==> dir [/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp]
           arg [-L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp] ==> dir [/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v6-m/nofp]
@@ -2798,11 +3010,11 @@ events:
           arg [-L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib] ==> dir [/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib]
           arg [-L/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib] ==> dir [/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../arm-none-eabi/lib]
           arg [--build-id=none] ==> ignore
-          arg [CMakeFiles/cmTC_05f79.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_4a696.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
         ignore line: [/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start]
         ignore line: [ defaulting to 00008000]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_05f79.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_05f79.elf.']
-        ignore line: [/opt/homebrew/bin/arm-none-eabi-g++ -mcpu=cortex-m0plus -mthumb  -Wl --build-id=none -nostdlib  -v CMakeFiles/cmTC_05f79.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_05f79.elf]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_4a696.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m' '-dumpdir' 'cmTC_4a696.elf.']
+        ignore line: [/opt/homebrew/bin/arm-none-eabi-g++ -mcpu=cortex-m0plus -mthumb  -Wl --build-id=none -nostdlib  -v CMakeFiles/cmTC_4a696.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_4a696.elf]
         ignore line: []
         ignore line: []
         collapse library dir [/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp] ==> [/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp]
@@ -2994,6 +3206,8 @@ events:
     found: "/opt/homebrew/Frameworks/Python.framework/Versions/3.13/bin/python3.13"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -3012,6 +3226,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -3072,6 +3288,22 @@ events:
         reason: "no_exist"
       -
         path: "/Users/kyankotschevar-smead/Desktop/Projects/Embedded-Systems/lab1/src-gen/ToolsLEDSolution/build/CMakeFiles/pkgRedirects/pioasm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/pioasmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/pioasm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/tmp/lf-cli-0.11.0-MacOS-aarch64/pioasmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/tmp/lf-cli-0.11.0-MacOS-aarch64/pioasm-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -3197,6 +3429,8 @@ events:
     found: null
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -3215,6 +3449,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -3250,6 +3486,8 @@ events:
     names:
       - "doxygen"
     candidate_directories:
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -3297,6 +3535,8 @@ events:
       - "/Applications/Utilities/Doxygen.app/Contents/Resources/"
       - "/Applications/Utilities/Doxygen.app/Contents/MacOS/"
     searched_directories:
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/doxygen"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/doxygen"
       - "/opt/homebrew/opt/node@22/bin/doxygen"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/doxygen"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/doxygen"
@@ -3346,6 +3586,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -3364,6 +3606,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -3399,6 +3643,8 @@ events:
     names:
       - "dot"
     candidate_directories:
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/"
       - "/opt/homebrew/opt/node@22/bin/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
@@ -3450,6 +3696,8 @@ events:
       - "/Applications/Utilities/Doxygen.app/Contents/Resources/"
       - "/Applications/Utilities/Doxygen.app/Contents/MacOS/"
     searched_directories:
+      - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin/dot"
+      - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin/dot"
       - "/opt/homebrew/opt/node@22/bin/dot"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/dot"
       - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/dot"
@@ -3503,6 +3751,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -3521,6 +3771,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -3585,6 +3837,22 @@ events:
         mode: "config"
         reason: "no_exist"
       -
+        path: "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/picotoolConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/picotool-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/tmp/lf-cli-0.11.0-MacOS-aarch64/picotoolConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/tmp/lf-cli-0.11.0-MacOS-aarch64/picotool-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
         path: "/opt/homebrew/opt/node@22/picotoolConfig.cmake"
         mode: "config"
         reason: "no_exist"
@@ -3622,6 +3890,8 @@ events:
       version: "2.2.0"
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -3640,6 +3910,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"
@@ -3695,6 +3967,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
@@ -3713,6 +3987,8 @@ events:
         - "/Library/TeX/texbin"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/kyankotschevar-smead/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kyankotschevar-smead/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+        - "/tmp/lf-cli-0.11.0-MacOS-aarch64/bin"
         - "/opt/homebrew/opt/node@22/bin"
         - "/Users/kyankotschevar-smead/.nix-profile/bin"
         - "/nix/var/nix/profiles/default/bin"

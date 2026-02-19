@@ -10,12 +10,46 @@ import LED from "LED.lf"
 
 main reactor {
     led = new LED()
-    timer t(0, 1 sec)
+    timer t(1 sec, 100 msec)  // Start after 1 sec, fast timer for blink control
     state led_on: bool = false
+    state blink_count: int = 0      // Current blink within the cycle
+    state target_blinks: int = 1    // How many blinks for this cycle (1, 2, 3, or 4)
+    state in_pause: bool = false    // Whether we're in the 1-second pause
+    state pause_ticks: int = 0      // Counter for pause duration
 
     reaction(t) -> led.set {=
-        self->led_on = !self->led_on;
-        printf("LED state: %d\n", self->led_on);
-        lf_set(led.set, self->led_on);
+        if (self->in_pause) {
+            // During pause, keep LED off and count ticks (10 ticks = 1 second)
+            self->pause_ticks++;
+            if (self->pause_ticks >= 10) {
+                // Pause complete, start next blink cycle
+                self->in_pause = false;
+                self->pause_ticks = 0;
+                self->target_blinks++;
+                if (self->target_blinks > 4) {
+                    self->target_blinks = 1;  // Reset to 1 after 4
+                }
+                self->blink_count = 0;
+            }
+            lf_set(led.set, false);
+        } else {
+            // Blinking phase
+            self->led_on = !self->led_on;
+            lf_set(led.set, self->led_on);
+            
+            if (!self->led_on) {
+                // Just turned off, count this as one complete blink
+                self->blink_count++;
+                printf("Blink %d of %d\n", self->blink_count, self->target_blinks);
+                
+                if (self->blink_count >= self->target_blinks) {
+                    // Done with this cycle, enter pause
+                    self->in_pause = true;
+                    self->pause_ticks = 0;
+                    printf("Pausing for 1 second, next cycle: %d blinks\n", 
+                           (self->target_blinks % 4) + 1);
+                }
+            }
+        }
     =}
 }
