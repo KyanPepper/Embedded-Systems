@@ -1,18 +1,11 @@
-#ifndef _encoders_H
-#define _encoders_H
-#ifndef _ENCODERS_H // necessary for arduino-cli, which automatically includes headers that are not used
-#ifndef TOP_LEVEL_PREAMBLE_1155437763_H
-#define TOP_LEVEL_PREAMBLE_1155437763_H
-/*Correspondence: Range: [(18, 2), (26, 17)) -> Range: [(0, 0), (8, 17)) (verbatim=true; src=/Users/kyankotschevar-smead/Desktop/Projects/Embedded-Systems/src/lib/Encoders.lf)*/#include <math.h>
-#include <hardware/pio.h>
-#include <quadrature_encoder.pio.h>
-
-// pin defines
-#define RIGHT_ENCODER_AB 8
-#define LEFT_ENCODER_AB 12
-#define RIGHT_SM 0
-#define LEFT_SM 1
-#endif // TOP_LEVEL_PREAMBLE_1155437763_H
+#ifndef _accelerometer_H
+#define _accelerometer_H
+#ifndef _ACCELEROMETER_H // necessary for arduino-cli, which automatically includes headers that are not used
+#ifndef TOP_LEVEL_PREAMBLE_2085601983_H
+#define TOP_LEVEL_PREAMBLE_2085601983_H
+/*Correspondence: Range: [(21, 2), (22, 16)) -> Range: [(0, 0), (1, 16)) (verbatim=true; src=/Users/kyankotschevar-smead/Desktop/Projects/Embedded-Systems/lab2/lib/IMU.lf)*/#include <pico/stdlib.h>
+#include <imu.h>
+#endif // TOP_LEVEL_PREAMBLE_2085601983_H
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -21,10 +14,10 @@ extern "C" {
 #ifdef __cplusplus
 }
 #endif
-typedef struct encoders_self_t{
+typedef struct accelerometer_self_t{
     self_base_t base; // This field is only to be used by the runtime, not the user.
     int end[0]; // placeholder; MSVC does not compile empty structs
-} encoders_self_t;
+} accelerometer_self_t;
 typedef struct {
     token_type_t type;
     lf_token_t* token;
@@ -38,34 +31,48 @@ typedef struct {
     #endif
     interval_t physical_time_of_arrival;
     #endif
-} encoders_trigger_t;
+} accelerometer_trigger_t;
 typedef struct {
     token_type_t type;
     lf_token_t* token;
     size_t length;
     bool is_present;
     lf_port_internal_t _base;
-    int32_t value;
+    float value;
     #ifdef FEDERATED
     #ifdef FEDERATED_DECENTRALIZED
     tag_t intended_tag;
     #endif
     interval_t physical_time_of_arrival;
     #endif
-} encoders_right_t;
+} accelerometer_x_t;
 typedef struct {
     token_type_t type;
     lf_token_t* token;
     size_t length;
     bool is_present;
     lf_port_internal_t _base;
-    int32_t value;
+    float value;
     #ifdef FEDERATED
     #ifdef FEDERATED_DECENTRALIZED
     tag_t intended_tag;
     #endif
     interval_t physical_time_of_arrival;
     #endif
-} encoders_left_t;
+} accelerometer_y_t;
+typedef struct {
+    token_type_t type;
+    lf_token_t* token;
+    size_t length;
+    bool is_present;
+    lf_port_internal_t _base;
+    float value;
+    #ifdef FEDERATED
+    #ifdef FEDERATED_DECENTRALIZED
+    tag_t intended_tag;
+    #endif
+    interval_t physical_time_of_arrival;
+    #endif
+} accelerometer_z_t;
 #endif
 #endif

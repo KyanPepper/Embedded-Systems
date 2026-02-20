@@ -1,11 +1,10 @@
-#ifndef _display_H
-#define _display_H
-#ifndef _DISPLAY_H // necessary for arduino-cli, which automatically includes headers that are not used
-#ifndef TOP_LEVEL_PREAMBLE_169916747_H
-#define TOP_LEVEL_PREAMBLE_169916747_H
-/*Correspondence: Range: [(18, 2), (19, 68)) -> Range: [(0, 0), (1, 68)) (verbatim=true; src=/Users/kyankotschevar-smead/Desktop/Projects/Embedded-Systems/lab2/lib/Display.lf)*/#include <pico/stdlib.h>
-#include <display.h>        // Do not use "display.h". Doesn't work.
-#endif // TOP_LEVEL_PREAMBLE_169916747_H
+#ifndef _tilt_H
+#define _tilt_H
+#ifndef _TILT_H // necessary for arduino-cli, which automatically includes headers that are not used
+#ifndef TOP_LEVEL_PREAMBLE_1022251996_H
+#define TOP_LEVEL_PREAMBLE_1022251996_H
+/*Correspondence: Range: [(10, 2), (10, 19)) -> Range: [(0, 0), (0, 17)) (verbatim=true; src=/Users/kyankotschevar-smead/Desktop/Projects/Embedded-Systems/lab2/lib/Tilt.lf)*/#include <math.h>
+#endif // TOP_LEVEL_PREAMBLE_1022251996_H
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -14,65 +13,79 @@ extern "C" {
 #ifdef __cplusplus
 }
 #endif
-typedef struct display_self_t{
+typedef struct tilt_self_t{
     self_base_t base; // This field is only to be used by the runtime, not the user.
     int end[0]; // placeholder; MSVC does not compile empty structs
-} display_self_t;
+} tilt_self_t;
 typedef struct {
     token_type_t type;
     lf_token_t* token;
     size_t length;
     bool is_present;
     lf_port_internal_t _base;
-    string value;
+    float value;
     #ifdef FEDERATED
     #ifdef FEDERATED_DECENTRALIZED
     tag_t intended_tag;
     #endif
     interval_t physical_time_of_arrival;
     #endif
-} display_line0_t;
+} tilt_x_t;
 typedef struct {
     token_type_t type;
     lf_token_t* token;
     size_t length;
     bool is_present;
     lf_port_internal_t _base;
-    string value;
+    float value;
     #ifdef FEDERATED
     #ifdef FEDERATED_DECENTRALIZED
     tag_t intended_tag;
     #endif
     interval_t physical_time_of_arrival;
     #endif
-} display_line1_t;
+} tilt_y_t;
 typedef struct {
     token_type_t type;
     lf_token_t* token;
     size_t length;
     bool is_present;
     lf_port_internal_t _base;
-    string value;
+    float value;
     #ifdef FEDERATED
     #ifdef FEDERATED_DECENTRALIZED
     tag_t intended_tag;
     #endif
     interval_t physical_time_of_arrival;
     #endif
-} display_line2_t;
+} tilt_z_t;
 typedef struct {
     token_type_t type;
     lf_token_t* token;
     size_t length;
     bool is_present;
     lf_port_internal_t _base;
-    string value;
+    float value;
     #ifdef FEDERATED
     #ifdef FEDERATED_DECENTRALIZED
     tag_t intended_tag;
     #endif
     interval_t physical_time_of_arrival;
     #endif
-} display_line3_t;
+} tilt_pitch_t;
+typedef struct {
+    token_type_t type;
+    lf_token_t* token;
+    size_t length;
+    bool is_present;
+    lf_port_internal_t _base;
+    float value;
+    #ifdef FEDERATED
+    #ifdef FEDERATED_DECENTRALIZED
+    tag_t intended_tag;
+    #endif
+    interval_t physical_time_of_arrival;
+    #endif
+} tilt_roll_t;
 #endif
 #endif
