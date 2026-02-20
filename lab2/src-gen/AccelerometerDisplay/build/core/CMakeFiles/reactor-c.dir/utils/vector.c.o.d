@@ -1,0 +1,21 @@
+core/CMakeFiles/reactor-c.dir/utils/vector.c.o: \
+ /home/masonmenser/Embedded-Systems/lab2/src-gen/AccelerometerDisplay/core/utils/vector.c \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdlib.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/ieeefp.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_ansi.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/newlib.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/config.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/reent.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_ansi.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/cdefs.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_types.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_types.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/lock.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/stdlib.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/alloca.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/assert.h \
+ /home/masonmenser/Embedded-Systems/lab2/src-gen/AccelerometerDisplay/core/../include/core/utils/vector.h

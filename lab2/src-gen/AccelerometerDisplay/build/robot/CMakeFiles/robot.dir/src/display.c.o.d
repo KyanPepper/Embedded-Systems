@@ -1,0 +1,28 @@
+robot/CMakeFiles/robot.dir/src/display.c.o: \
+ /home/masonmenser/Embedded-Systems/lab2/src-gen/AccelerometerDisplay/robot-lib/src/display.c \
+ /home/masonmenser/Embedded-Systems/lab2/src-gen/AccelerometerDisplay/robot-lib/src/display.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdbool.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/string.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_ansi.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/newlib.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/config.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/ieeefp.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/reent.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_ansi.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/cdefs.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_types.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_types.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/lock.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_locale.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/strings.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/string.h \
+ /nix/store/c353gqsmf8mvg72vivm9fb2dv210wnkm-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/assert.h \
+ /home/masonmenser/Embedded-Systems/lab2/src-gen/AccelerometerDisplay/robot-lib/src/sh1106.h
