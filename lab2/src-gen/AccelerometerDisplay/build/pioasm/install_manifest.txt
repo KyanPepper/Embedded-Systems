@@ -1,0 +1,5 @@
+/home/masonmenser/Embedded-Systems/lab2/src-gen/AccelerometerDisplay/build/pioasm-install/pioasm/pioasm
+/home/masonmenser/Embedded-Systems/lab2/src-gen/AccelerometerDisplay/build/pioasm-install/pioasm/pioasmTargets.cmake
+/home/masonmenser/Embedded-Systems/lab2/src-gen/AccelerometerDisplay/build/pioasm-install/pioasm/pioasmTargets-release.cmake
+/home/masonmenser/Embedded-Systems/lab2/src-gen/AccelerometerDisplay/build/pioasm-install/pioasm/pioasmConfig.cmake
+/home/masonmenser/Embedded-Systems/lab2/src-gen/AccelerometerDisplay/build/pioasm-install/pioasm/pioasmConfigVersion.cmake

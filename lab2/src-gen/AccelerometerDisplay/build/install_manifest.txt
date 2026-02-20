@@ -1,0 +1,1 @@
+/home/masonmenser/Embedded-Systems/lab2/bin/AccelerometerDisplay.elf
