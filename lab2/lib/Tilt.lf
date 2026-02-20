@@ -1,0 +1,37 @@
+
+target C {
+  platform: {
+    name: "rp2040",
+    board: "pololu_3pi_2040_robot"
+  },
+  single-threaded: true
+}
+
+preamble {=
+  #include <math.h>
+=}
+
+reactor Tilt {
+
+  input x: float   // forward/back acceleration in g's
+  input y: float   // left/right acceleration in g's
+  input z: float   // up/down acceleration in g's
+
+  output pitch: float  // nose-up/down angle in degrees (+ = nose up)
+  output roll:  float  // left/right lean angle in degrees (+ = right)
+
+  reaction(x, y, z) -> pitch, roll {=
+    float ax = x->value;
+    float ay = y->value;
+    float az = z->value;
+
+    // Pitch: angle of gravity in the XZ plane. Negate ax so nose-up is positive.
+    float pitch_rad = atan2f(-ax, sqrtf(ay * ay + az * az));
+
+    // Roll: angle of gravity in the YZ plane. Flat = 0°.
+    float roll_rad = atan2f(ay, az);
+
+    lf_set(pitch, pitch_rad * (180.0f / (float)M_PI));
+    lf_set(roll,  roll_rad  * (180.0f / (float)M_PI));
+  =}
+}
