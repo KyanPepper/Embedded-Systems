@@ -1,0 +1,44 @@
+target C {
+  platform: {
+    name: "rp2040",
+    board: "pololu_3pi_2040_robot"
+  },
+  single-threaded: true
+}
+
+import Display from "lib/Display.lf"
+
+preamble {=
+  #include <pico/stdlib.h>
+  #include <hardware/gpio.h>
+=}
+
+main reactor {
+  timer poll_btn(0, 250 ms)
+
+  display = new Display()
+
+  state btn_down: bool = false
+
+  reaction(startup) {=
+    gpio_init(25);
+    gpio_set_dir(25, GPIO_IN);
+    gpio_pull_up(25);
+  =}
+
+  // read pin 25 directly from the SIO input register
+  reaction(poll_btn) {=
+    uint32_t all_pins = *(volatile uint32_t *)0xD0000004;
+    // pull-up means high = not pressed, so flip it
+    self->btn_down = ((all_pins >> 25) & 1u) == 0;
+  =}
+
+  reaction(poll_btn) -> display.line1, display.line2 {=
+    lf_set(display.line1, "Button A");
+    if (self->btn_down) {
+      lf_set(display.line2, "DOWN");
+    } else {
+      lf_set(display.line2, "--");
+    }
+  =}
+}

@@ -1,0 +1,45 @@
+target C {
+  platform: {
+    name: "rp2040",
+    board: "pololu_3pi_2040_robot"
+  },
+  single-threaded: true
+}
+
+preamble {=
+  #include <stdint.h>
+  #include <pico/stdlib.h>
+  #include <hardware/gpio.h>
+
+  #define SIO_BASE           0xD0000000u
+  #define GPIO_OUT_SET       (SIO_BASE + 0x14u)
+  #define GPIO_OUT_CLR       (SIO_BASE + 0x18u)
+
+  #define LED_PIN            25
+  #define LED_MASK           (1u << LED_PIN)
+
+  static inline void mmio_write32(uint32_t addr, uint32_t val) {
+    *(volatile uint32_t *)addr = val;
+  }
+=}
+
+main reactor {
+  timer on(0, 1 sec)
+  timer off(500 msec, 1 sec)
+
+  reaction(startup) {=
+    // Use SDK for init since it involves multiple complex register configurations
+    gpio_init(LED_PIN);
+    gpio_set_dir(LED_PIN, GPIO_OUT);
+  =}
+
+  reaction(on) {=
+    // Turn LED on by writing to the GPIO SET register directly
+    mmio_write32(GPIO_OUT_SET, LED_MASK);
+  =}
+
+  reaction(off) {=
+    // Turn LED off by writing to the GPIO CLR register directly
+    mmio_write32(GPIO_OUT_CLR, LED_MASK);
+  =}
+}
