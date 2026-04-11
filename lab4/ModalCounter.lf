@@ -1,0 +1,111 @@
+target C {
+  platform: {
+    name: "rp2040",
+    board: "pololu_3pi_2040_robot"
+  },
+  single-threaded: true,
+  keepalive: true
+}
+
+import Display from "lib/Display.lf"
+
+preamble {=
+  #include <stdio.h>
+  #include <stdlib.h>
+  #include <pico/stdlib.h>
+  #include <hardware/gpio.h>
+
+  #define BUTTON_A_PIN 25
+  #define DEBOUNCE_NS  200000000LL
+
+  static void *press_action_ptr = NULL;
+  static instant_t last_edge_time = 0;
+
+  static void button_a_callback(uint gpio, uint32_t events) {
+    instant_t now = lf_time_physical();
+    if (now - last_edge_time < DEBOUNCE_NS) {
+      return;
+    }
+    last_edge_time = now;
+    if (press_action_ptr != NULL) {
+      lf_schedule(press_action_ptr, 0);
+    }
+  }
+=}
+
+reactor Counter {
+  input toggle: bool
+  output value: int
+  output label: string
+
+  state n: int = 0
+
+  initial mode UP {
+    timer tick_up(0, 250 ms)
+
+    reaction(tick_up) -> value, label {=
+      self->n++;
+      lf_set(value, self->n);
+      lf_set(label, "counting up");
+    =}
+
+    reaction(toggle) -> reset(DOWN) {=
+      lf_set_mode(DOWN);
+    =}
+  }
+
+  mode DOWN {
+    timer tick_down(0, 500 ms)
+
+    reaction(tick_down) -> value, label {=
+      self->n--;
+      lf_set(value, self->n);
+      lf_set(label, "counting down");
+    =}
+
+    reaction(toggle) -> reset(UP) {=
+      lf_set_mode(UP);
+    =}
+  }
+}
+
+main reactor {
+  physical action press: bool
+
+  counter = new Counter()
+  display = new Display()
+
+  reaction(startup) -> press {=
+    stdio_init_all();
+    sleep_ms(1500);
+    printf("ModalCounter running\n");
+    fflush(stdout);
+
+    press_action_ptr = press;
+
+    gpio_init(BUTTON_A_PIN);
+    gpio_set_dir(BUTTON_A_PIN, GPIO_IN);
+    gpio_pull_up(BUTTON_A_PIN);
+
+    gpio_set_irq_enabled_with_callback(
+      BUTTON_A_PIN,
+      GPIO_IRQ_EDGE_FALL,
+      true,
+      &button_a_callback
+    );
+  =}
+
+  reaction(press) -> counter.toggle {=
+    lf_set(counter.toggle, true);
+  =}
+
+  reaction(counter.value, counter.label) -> display.line1, display.line2 {=
+    char *row1 = (char *)malloc(17);
+    snprintf(row1, 17, "%s", counter.label->value);
+    lf_set(display.line1, row1);
+
+    char *row2 = (char *)malloc(17);
+    snprintf(row2, 17, "count: %d", counter.value->value);
+    lf_set(display.line2, row2);
+  =}
+}

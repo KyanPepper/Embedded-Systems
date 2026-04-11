@@ -1,0 +1,62 @@
+target C {
+  platform: {
+    name: "rp2040",
+    board: "pololu_3pi_2040_robot"
+  },
+  single-threaded: true,
+  keepalive: true
+}
+
+preamble {=
+  #include <stdio.h>
+  #include <pico/stdlib.h>
+  #include <hardware/gpio.h>
+
+  #define BUTTON_A_PIN 25
+  #define DEBOUNCE_NS  200000000LL
+
+  static void *press_action_ptr = NULL;
+  static instant_t last_edge_time = 0;
+
+  static void button_a_callback(uint gpio, uint32_t events) {
+    instant_t now = lf_time_physical();
+    if (now - last_edge_time < DEBOUNCE_NS) {
+      return;
+    }
+    last_edge_time = now;
+    if (press_action_ptr != NULL) {
+      lf_schedule(press_action_ptr, 0);
+    }
+  }
+=}
+
+main reactor {
+  physical action press
+  state count: int = 0
+
+  reaction(startup) -> press {=
+    stdio_init_all();
+    sleep_ms(1500);
+    printf("ButtonDebounced up\n");
+    fflush(stdout);
+
+    press_action_ptr = press;
+
+    gpio_init(BUTTON_A_PIN);
+    gpio_set_dir(BUTTON_A_PIN, GPIO_IN);
+    gpio_pull_up(BUTTON_A_PIN);
+
+    gpio_set_irq_enabled_with_callback(
+      BUTTON_A_PIN,
+      GPIO_IRQ_EDGE_FALL,
+      true,
+      &button_a_callback
+    );
+  =}
+
+  reaction(press) {=
+    self->count++;
+    printf("Clean press #%d\n", self->count);
+    fflush(stdout);
+  =}
+}

@@ -1,0 +1,95 @@
+target C {
+  platform: {
+    name: "rp2040",
+    board: "pololu_3pi_2040_robot"
+  },
+  single-threaded: true,
+  keepalive: true,
+  files: ["../robot-lib/"],
+  cmake-include: ["../robot-lib/robot-lib.txt"]
+}
+
+import Accelerometer from "lib/IMU.lf"
+
+preamble {=
+  #include <math.h>
+  #include <stdio.h>
+  #include <pico/stdlib.h>
+  #include <hardware/gpio.h>
+
+  #define LED_PIN 25
+  #define WAKE_THRESHOLD_G 0.1f
+=}
+
+main reactor {
+  timer sample(0, 50 ms)
+  timer led_off(0, 150 ms)
+
+  accel = new Accelerometer()
+
+  state awake: bool = false
+  state baseline_x: float = 0.0f
+  state baseline_y: float = 0.0f
+  state baseline_z: float = 1.0f
+  state calibrated: bool = false
+  state cal_count: int = 0
+
+  reaction(startup) {=
+    stdio_init_all();
+    sleep_ms(1500);
+    printf("AccelWakeup: hold robot still to calibrate\n");
+    fflush(stdout);
+
+    gpio_init(LED_PIN);
+    gpio_set_dir(LED_PIN, GPIO_OUT);
+    gpio_put(LED_PIN, false);
+  =}
+
+  reaction(sample) -> accel.trigger {=
+    lf_set(accel.trigger, true);
+  =}
+
+  reaction(accel.x, accel.y, accel.z) {=
+    float ax = accel.x->value;
+    float ay = accel.y->value;
+    float az = accel.z->value;
+
+    if (!self->calibrated) {
+      self->baseline_x += ax;
+      self->baseline_y += ay;
+      self->baseline_z += az;
+      self->cal_count++;
+      if (self->cal_count >= 20) {
+        self->baseline_x /= self->cal_count;
+        self->baseline_y /= self->cal_count;
+        self->baseline_z /= self->cal_count;
+        self->calibrated = true;
+        printf("Calibrated. baseline mag = %.3f\n",
+               sqrtf(self->baseline_x * self->baseline_x +
+                     self->baseline_y * self->baseline_y +
+                     self->baseline_z * self->baseline_z));
+        fflush(stdout);
+      }
+      return;
+    }
+
+    float dx = ax - self->baseline_x;
+    float dy = ay - self->baseline_y;
+    float dz = az - self->baseline_z;
+    float delta = sqrtf(dx * dx + dy * dy + dz * dz);
+
+    if (delta > WAKE_THRESHOLD_G && !self->awake) {
+      self->awake = true;
+      gpio_put(LED_PIN, true);
+      printf("Wake! delta = %.3f g\n", delta);
+      fflush(stdout);
+    }
+  =}
+
+  reaction(led_off) {=
+    if (self->awake) {
+      gpio_put(LED_PIN, false);
+      self->awake = false;
+    }
+  =}
+}

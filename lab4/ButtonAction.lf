@@ -1,0 +1,58 @@
+target C {
+  platform: {
+    name: "rp2040",
+    board: "pololu_3pi_2040_robot"
+  },
+  single-threaded: true,
+  keepalive: true
+}
+
+preamble {=
+  #include <stdio.h>
+  #include <pico/stdlib.h>
+  #include <hardware/gpio.h>
+
+  #define BUTTON_A_PIN 25
+
+  static void *press_action_ptr = NULL;
+
+  static void button_a_callback(uint gpio, uint32_t events) {
+    if (press_action_ptr != NULL) {
+      lf_schedule(press_action_ptr, 0);
+    }
+  }
+=}
+
+main reactor {
+  physical action press
+
+  state last_press_ms: long long = 0
+
+  reaction(startup) -> press {=
+    stdio_init_all();
+    sleep_ms(1500);
+    printf("ButtonAction ready\n");
+    fflush(stdout);
+
+    press_action_ptr = press;
+
+    gpio_init(BUTTON_A_PIN);
+    gpio_set_dir(BUTTON_A_PIN, GPIO_IN);
+    gpio_pull_up(BUTTON_A_PIN);
+
+    gpio_set_irq_enabled_with_callback(
+      BUTTON_A_PIN,
+      GPIO_IRQ_EDGE_FALL,
+      true,
+      &button_a_callback
+    );
+  =}
+
+  reaction(press) {=
+    long long now_ms = lf_time_logical_elapsed() / 1000000LL;
+    long long gap = now_ms - self->last_press_ms;
+    printf("Button A press at %lld ms (gap %lld ms)\n", now_ms, gap);
+    fflush(stdout);
+    self->last_press_ms = now_ms;
+  =}
+}

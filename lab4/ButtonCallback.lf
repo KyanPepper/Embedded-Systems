@@ -1,0 +1,41 @@
+target C {
+  platform: {
+    name: "rp2040",
+    board: "pololu_3pi_2040_robot"
+  },
+  single-threaded: true,
+  keepalive: true
+}
+
+preamble {=
+  #include <stdio.h>
+  #include <pico/stdlib.h>
+  #include <hardware/gpio.h>
+
+  #define BUTTON_A_PIN 25
+
+  static void button_a_callback(uint gpio, uint32_t events) {
+    printf("IRQ fired. gpio=%u events=0x%08lx\n", gpio, events);
+    fflush(stdout);
+  }
+=}
+
+main reactor {
+  reaction(startup) {=
+    stdio_init_all();
+    sleep_ms(1500);
+    printf("ButtonCallback starting\n");
+    fflush(stdout);
+
+    gpio_init(BUTTON_A_PIN);
+    gpio_set_dir(BUTTON_A_PIN, GPIO_IN);
+    gpio_pull_up(BUTTON_A_PIN);
+
+    gpio_set_irq_enabled_with_callback(
+      BUTTON_A_PIN,
+      GPIO_IRQ_EDGE_FALL,
+      true,
+      &button_a_callback
+    );
+  =}
+}
