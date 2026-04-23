@@ -1,0 +1,120 @@
+target C {
+  platform: {
+    name: "rp2040",
+    board: "pololu_3pi_2040_robot"
+  },
+  single-threaded: true
+}
+
+import Display   from "lib/Display.lf"
+import Motors    from "lib/Motors.lf"
+import Encoders  from "lib/Encoders.lf"
+import GyroAngle from "lib/IMU.lf"
+
+preamble {=
+  #include <math.h>
+  #include <stdio.h>
+  #include <stdlib.h>
+
+  #define WHEEL_DIAMETER_M 0.03175f
+  #define TARGET_DISTANCE_M 0.5f
+  #define TARGET_TURN_DEG 90.0f
+  #define DRIVE_POWER 0.15f
+  #define TURN_POWER  0.12f
+=}
+
+reactor SquareController {
+  input  left_dist_deg: int32_t
+  input  right_dist_deg: int32_t
+  input  heading_z: float
+
+  output left_power: float
+  output right_power: float
+  output notify: string
+
+  state dist_start_left: int32_t = 0
+  state dist_start_right: int32_t = 0
+  state dist_initialized: bool = false
+  state heading_start: float = 0
+  state heading_initialized: bool = false
+
+  initial mode FORWARD {
+    reaction(left_dist_deg, right_dist_deg)
+        -> reset(TURNING), left_power, right_power, notify {=
+      if (!self->dist_initialized) {
+        self->dist_start_left  = left_dist_deg->value;
+        self->dist_start_right = right_dist_deg->value;
+        self->dist_initialized = true;
+      }
+
+      float left_m  =
+        ((float)(left_dist_deg->value  - self->dist_start_left)  / 360.0f)
+        * ((float)M_PI * WHEEL_DIAMETER_M);
+      float right_m =
+        ((float)(right_dist_deg->value - self->dist_start_right) / 360.0f)
+        * ((float)M_PI * WHEEL_DIAMETER_M);
+      float avg = 0.5f * (left_m + right_m);
+
+      if (avg >= TARGET_DISTANCE_M) {
+        lf_set(left_power,  0.0f);
+        lf_set(right_power, 0.0f);
+        self->dist_initialized = false;
+        self->heading_initialized = false;
+        lf_set_mode(TURNING);
+        lf_set(notify, "TURNING");
+      } else {
+        lf_set(left_power,  DRIVE_POWER);
+        lf_set(right_power, DRIVE_POWER);
+        lf_set(notify, "FORWARD");
+      }
+    =}
+  }
+
+  mode TURNING {
+    reaction(heading_z)
+        -> reset(FORWARD), left_power, right_power, notify {=
+      if (!self->heading_initialized) {
+        self->heading_start = heading_z->value;
+        self->heading_initialized = true;
+      }
+
+      float turned = fabsf(heading_z->value - self->heading_start);
+
+      if (turned >= TARGET_TURN_DEG) {
+        lf_set(left_power,  0.0f);
+        lf_set(right_power, 0.0f);
+        self->heading_initialized = false;
+        self->dist_initialized = false;
+        lf_set_mode(FORWARD);
+        lf_set(notify, "FORWARD");
+      } else {
+        lf_set(left_power, -TURN_POWER);
+        lf_set(right_power, TURN_POWER);
+        lf_set(notify, "TURNING");
+      }
+    =}
+  }
+}
+
+main reactor {
+  timer sample(0, 50 ms)
+
+  ctrl     = new SquareController()
+  motors   = new Motors()
+  encoders = new Encoders()
+  gyro     = new GyroAngle()
+  display  = new Display()
+
+  encoders.left  -> ctrl.left_dist_deg
+  encoders.right -> ctrl.right_dist_deg
+  gyro.z         -> ctrl.heading_z
+
+  ctrl.left_power  -> motors.left_power
+  ctrl.right_power -> motors.right_power
+  ctrl.notify      -> display.line0
+
+  reaction(sample) -> encoders.trigger, gyro.trigger {=
+    lf_set(encoders.trigger, true);
+    lf_set(gyro.trigger, true);
+  =}
+}

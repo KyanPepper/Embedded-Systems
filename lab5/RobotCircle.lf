@@ -1,0 +1,34 @@
+target C {
+  platform: {
+    name: "rp2040",
+    board: "pololu_3pi_2040_robot"
+  },
+  single-threaded: true
+}
+
+import Display from "lib/Display.lf"
+import Motors  from "lib/Motors.lf"
+
+main reactor {
+  timer t(0, 10 sec)
+  state driving: bool = false
+
+  motors  = new Motors()
+  display = new Display()
+
+  reaction(startup) -> motors.left_power, motors.right_power, display.line0 {=
+    lf_set(motors.left_power,  0.18f);
+    lf_set(motors.right_power, 0.10f);
+    lf_set(display.line0, "CIRCLING");
+    self->driving = true;
+  =}
+
+  reaction(t) -> motors.left_power, motors.right_power, display.line0 {=
+    if (self->driving) {
+      lf_set(motors.left_power,  0.0f);
+      lf_set(motors.right_power, 0.0f);
+      lf_set(display.line0, "DONE");
+    }
+    self->driving = false;
+  =}
+}

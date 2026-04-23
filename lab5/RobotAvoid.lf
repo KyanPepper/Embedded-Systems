@@ -1,0 +1,185 @@
+target C {
+  platform: {
+    name: "rp2040",
+    board: "pololu_3pi_2040_robot"
+  },
+  single-threaded: true
+}
+
+import Display   from "lib/Display.lf"
+import Motors    from "lib/Motors.lf"
+import Encoders  from "lib/Encoders.lf"
+import GyroAngle from "lib/IMU.lf"
+import Bump      from "lib/Bump.lf"
+
+preamble {=
+  #include <math.h>
+  #include <stdio.h>
+  #include <stdlib.h>
+
+  #define WHEEL_DIAMETER_M 0.03175f
+  #define TARGET_DISTANCE_M 0.5f
+  #define TARGET_TURN_DEG 90.0f
+  #define BACKUP_TIME_MS 700
+  #define EVADE_TURN_DEG 45.0f
+  #define DRIVE_POWER 0.15f
+  #define TURN_POWER  0.12f
+  #define BACK_POWER  0.15f
+=}
+
+reactor AvoidController {
+  input  left_dist_deg: int32_t
+  input  right_dist_deg: int32_t
+  input  heading_z: float
+  input  bump_left: bool
+  input  bump_right: bool
+  input  tick: bool
+
+  output left_power: float
+  output right_power: float
+  output notify: string
+
+  state dist_start_left: int32_t = 0
+  state dist_start_right: int32_t = 0
+  state dist_initialized: bool = false
+  state heading_start: float = 0
+  state heading_initialized: bool = false
+  state backup_ticks: int = 0
+  state evade_dir: float = 1
+
+  initial mode FORWARD {
+    reaction(left_dist_deg, right_dist_deg)
+        -> reset(TURNING), left_power, right_power, notify {=
+      if (!self->dist_initialized) {
+        self->dist_start_left  = left_dist_deg->value;
+        self->dist_start_right = right_dist_deg->value;
+        self->dist_initialized = true;
+      }
+
+      float left_m =
+        ((float)(left_dist_deg->value  - self->dist_start_left)  / 360.0f)
+        * ((float)M_PI * WHEEL_DIAMETER_M);
+      float right_m =
+        ((float)(right_dist_deg->value - self->dist_start_right) / 360.0f)
+        * ((float)M_PI * WHEEL_DIAMETER_M);
+      float avg = 0.5f * (left_m + right_m);
+
+      if (avg >= TARGET_DISTANCE_M) {
+        lf_set(left_power,  0.0f);
+        lf_set(right_power, 0.0f);
+        self->dist_initialized = false;
+        self->heading_initialized = false;
+        lf_set_mode(TURNING);
+        lf_set(notify, "TURN 90");
+      } else {
+        lf_set(left_power,  DRIVE_POWER);
+        lf_set(right_power, DRIVE_POWER);
+        lf_set(notify, "FORWARD");
+      }
+    =}
+
+    reaction(bump_left, bump_right)
+        -> reset(BACKUP), left_power, right_power, notify {=
+      if (bump_left->is_present && bump_left->value) {
+        self->evade_dir =  1.0f;
+      }
+      if (bump_right->is_present && bump_right->value) {
+        self->evade_dir = -1.0f;
+      }
+      lf_set(left_power,  -BACK_POWER);
+      lf_set(right_power, -BACK_POWER);
+      self->backup_ticks = 0;
+      lf_set_mode(BACKUP);
+      lf_set(notify, "BACKUP");
+    =}
+  }
+
+  mode TURNING {
+    reaction(heading_z)
+        -> reset(FORWARD), left_power, right_power, notify {=
+      if (!self->heading_initialized) {
+        self->heading_start = heading_z->value;
+        self->heading_initialized = true;
+      }
+      float turned = fabsf(heading_z->value - self->heading_start);
+      if (turned >= TARGET_TURN_DEG) {
+        lf_set(left_power,  0.0f);
+        lf_set(right_power, 0.0f);
+        self->heading_initialized = false;
+        lf_set_mode(FORWARD);
+        lf_set(notify, "FORWARD");
+      } else {
+        lf_set(left_power, -TURN_POWER);
+        lf_set(right_power, TURN_POWER);
+        lf_set(notify, "TURN 90");
+      }
+    =}
+  }
+
+  mode BACKUP {
+    reaction(tick)
+        -> reset(EVADE), left_power, right_power, notify {=
+      self->backup_ticks++;
+      if (self->backup_ticks * 50 >= BACKUP_TIME_MS) {
+        lf_set(left_power,  0.0f);
+        lf_set(right_power, 0.0f);
+        self->backup_ticks = 0;
+        self->heading_initialized = false;
+        lf_set_mode(EVADE);
+        lf_set(notify, "EVADE");
+      } else {
+        lf_set(notify, "BACKUP");
+      }
+    =}
+  }
+
+  mode EVADE {
+    reaction(heading_z)
+        -> reset(FORWARD), left_power, right_power, notify {=
+      if (!self->heading_initialized) {
+        self->heading_start = heading_z->value;
+        self->heading_initialized = true;
+      }
+      float turned = fabsf(heading_z->value - self->heading_start);
+      if (turned >= EVADE_TURN_DEG) {
+        lf_set(left_power,  0.0f);
+        lf_set(right_power, 0.0f);
+        self->heading_initialized = false;
+        self->dist_initialized = false;
+        lf_set_mode(FORWARD);
+        lf_set(notify, "FORWARD");
+      } else {
+        lf_set(left_power,  self->evade_dir * -TURN_POWER);
+        lf_set(right_power, self->evade_dir *  TURN_POWER);
+        lf_set(notify, "EVADE");
+      }
+    =}
+  }
+}
+
+main reactor {
+  timer sample(0, 50 ms)
+
+  ctrl     = new AvoidController()
+  motors   = new Motors()
+  encoders = new Encoders()
+  gyro     = new GyroAngle()
+  bump     = new Bump()
+  display  = new Display()
+
+  encoders.left  -> ctrl.left_dist_deg
+  encoders.right -> ctrl.right_dist_deg
+  gyro.z         -> ctrl.heading_z
+  bump.left      -> ctrl.bump_left
+  bump.right     -> ctrl.bump_right
+
+  ctrl.left_power  -> motors.left_power
+  ctrl.right_power -> motors.right_power
+  ctrl.notify      -> display.line0
+
+  reaction(sample) -> encoders.trigger, gyro.trigger, ctrl.tick {=
+    lf_set(encoders.trigger, true);
+    lf_set(gyro.trigger, true);
+    lf_set(ctrl.tick, true);
+  =}
+}

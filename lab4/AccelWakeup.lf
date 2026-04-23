@@ -4,9 +4,7 @@ target C {
     board: "pololu_3pi_2040_robot"
   },
   single-threaded: true,
-  keepalive: true,
-  files: ["../robot-lib/"],
-  cmake-include: ["../robot-lib/robot-lib.txt"]
+  keepalive: true
 }
 
 import Accelerometer from "lib/IMU.lf"
@@ -28,9 +26,9 @@ main reactor {
   accel = new Accelerometer()
 
   state awake: bool = false
-  state baseline_x: float = 0.0f
-  state baseline_y: float = 0.0f
-  state baseline_z: float = 1.0f
+  state baseline_x: float = 0
+  state baseline_y: float = 0
+  state baseline_z: float = 1
   state calibrated: bool = false
   state cal_count: int = 0
 

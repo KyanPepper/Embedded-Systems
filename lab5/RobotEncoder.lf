@@ -1,0 +1,56 @@
+target C {
+  platform: {
+    name: "rp2040",
+    board: "pololu_3pi_2040_robot"
+  },
+  single-threaded: true
+}
+
+import Display  from "lib/Display.lf"
+import Encoders from "lib/Encoders.lf"
+
+preamble {=
+  #include <math.h>
+  #include <stdio.h>
+  #include <stdlib.h>
+
+  #define WHEEL_DIAMETER_M 0.03175f
+=}
+
+reactor AngleToDistance {
+  input  angle_deg: int32_t
+  output distance_m: float
+
+  reaction(angle_deg) -> distance_m {=
+    float revolutions = (float)angle_deg->value / 360.0f;
+    float meters = revolutions * ((float)M_PI * WHEEL_DIAMETER_M);
+    lf_set(distance_m, meters);
+  =}
+}
+
+main reactor {
+  timer sample(0, 100 ms)
+
+  encoders = new Encoders()
+  left_d   = new AngleToDistance()
+  right_d  = new AngleToDistance()
+  display  = new Display()
+
+  encoders.left  -> left_d.angle_deg
+  encoders.right -> right_d.angle_deg
+
+  reaction(sample) -> encoders.trigger {=
+    lf_set(encoders.trigger, true);
+  =}
+
+  reaction(left_d.distance_m, right_d.distance_m)
+      -> display.line0, display.line1 {=
+    char *top = (char *)malloc(17);
+    snprintf(top, 17, "L %6.3f m", left_d.distance_m->value);
+    lf_set(display.line0, top);
+
+    char *bot = (char *)malloc(17);
+    snprintf(bot, 17, "R %6.3f m", right_d.distance_m->value);
+    lf_set(display.line1, bot);
+  =}
+}

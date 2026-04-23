@@ -26,7 +26,7 @@ preamble {=
 main reactor {
   physical action press
 
-  state last_press_ms: long long = 0
+  state last_press_ms: int64_t = 0
 
   reaction(startup) -> press {=
     stdio_init_all();
@@ -49,9 +49,10 @@ main reactor {
   =}
 
   reaction(press) {=
-    long long now_ms = lf_time_logical_elapsed() / 1000000LL;
-    long long gap = now_ms - self->last_press_ms;
-    printf("Button A press at %lld ms (gap %lld ms)\n", now_ms, gap);
+    int64_t now_ms = lf_time_logical_elapsed() / 1000000LL;
+    int64_t gap = now_ms - self->last_press_ms;
+    printf("Button A press at %lld ms (gap %lld ms)\n",
+           (long long)now_ms, (long long)gap);
     fflush(stdout);
     self->last_press_ms = now_ms;
   =}
